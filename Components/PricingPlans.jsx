@@ -1,6 +1,9 @@
 "use client";
 import React from "react";
 import { dataPricingPlans } from "../DataPrice/index";
+import Image from "next/image";
+import tick from "../public/tick.png";
+import cross from "../public/cross.png";
 
 const PricingPlans = () => {
   return (
@@ -21,6 +24,49 @@ const PricingPlans = () => {
               <p>{plan.description}</p>
             </div>
             {/* features */}
+
+            <div>
+                <ul>
+                    {plan.features.map((feature) => (
+                        <li key={feature}>
+                            <Image
+                             src={tick}
+                             width={10}
+                             height={10}
+                             alt="tick"
+                             className="float-left"/>
+                             <span>{feature}</span>
+                        </li>
+                    ))}
+                      {/* nonsupport*/}
+                      {plan.nonSupport && (
+                         <li >
+                         <Image
+                           src={cross}
+                           width={10}
+                           height={10}
+                           alt="cross"
+                           className="float-left"
+                         />
+                         <span >6 Month Premium Support</span>
+                       </li>
+                      )}
+                      {/* nonupdate*/}
+                      {plan.nonUpdates && (
+                  <li className="text-sm">
+                    <Image
+                      src={cross}
+                      width={10}
+                      height={10}
+                      alt="cross"
+                      className="float-left"
+                    />
+                    <span>Lifetime Updates</span>
+                  </li>
+                )}
+                </ul>
+            </div>
+
           </div>
         ))}
       </div>
