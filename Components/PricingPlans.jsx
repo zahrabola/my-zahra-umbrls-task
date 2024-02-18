@@ -37,8 +37,8 @@ const PricingPlans = () => {
                   <li className="text-sm" key={feature}>
                     <Image
                       src={tick}
-                      width={10}
-                      height={10}
+                      width={15}
+                      height={15}
                       alt="tick"
                       className="float-left"
                     />
@@ -50,8 +50,8 @@ const PricingPlans = () => {
                   <li className="text-sm">
                     <Image
                       src={cross}
-                      width={10}
-                      height={10}
+                      width={12}
+                      height={12}
                       alt="cross"
                       className="float-left"
                     />
@@ -63,8 +63,8 @@ const PricingPlans = () => {
                   <li className="text-sm">
                     <Image
                       src={cross}
-                      width={10}
-                      height={10}
+                      width={12}
+                      height={12}
                       alt="cross"
                       className="float-left"
                     />

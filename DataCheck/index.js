@@ -14,8 +14,8 @@ export const integrations = [
         desc: "With lots of unique blocks, you can easily build a page without coding. Build your next landing page.",
         icon: <Image
         src={setup}
-        width={19}
-        height={19}
+        width={29}
+        height={29}
         alt="setup"
         className="float-left"
       />
@@ -25,8 +25,8 @@ export const integrations = [
         desc: "With lots of unique blocks, you can easily build a page without coding. Build your next landing page.",
         icon: <Image
         src={cart}
-        width={19}
-        height={19}
+        width={29}
+        height={29}
         alt="cart"
         className="float-left"/>
     }, {
@@ -34,8 +34,8 @@ export const integrations = [
         desc: "With lots of unique blocks, you can easily build a page without coding. Build your next landing page.",
         icon: <Image
         src={coupons}
-        width={19}
-        height={19}
+        width={29}
+        height={29}
         alt="coupons"
         className="float-left"/>
 
@@ -45,8 +45,8 @@ export const integrations = [
         desc: "With lots of unique blocks, you can easily build a page without coding. Build your next landing page.",
         icon: <Image
         src={organize}
-        width={19}
-        height={19}
+        width={29}
+        height={29}
         alt="organize"
         className="float-left"
       />
@@ -56,8 +56,8 @@ export const integrations = [
         desc: "With lots of unique blocks, you can easily build a page without coding. Build your next landing page.",
         icon: <Image
         src={customer}
-        width={19}
-        height={19}
+        width={29}
+        height={29}
         alt="customer"
         className="float-left"/>
     }, {
@@ -65,8 +65,8 @@ export const integrations = [
         desc: "With lots of unique blocks, you can easily build a page without coding. Build your next landing page.",
         icon: <Image
         src={bar}
-        width={19}
-        height={19}
+        width={29}
+        height={29}
         alt="bar"
         className="float-left"/>
 
