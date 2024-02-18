@@ -1,5 +1,6 @@
 import Hero from "@/Components/Hero";
 import HeroTwo from "@/Components/HeroTwo";
+import PricingPlans from "@/Components/PricingPlans";
 
 
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
         {/*Navbar */}
         <Hero />
         {/*Toggle */}
-        {/*Pricing */}
+        <PricingPlans />
         <HeroTwo />
         {/*Check */}
         {/*Footer */}
