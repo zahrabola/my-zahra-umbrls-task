@@ -41,7 +41,7 @@ export const integrations = [
 
     },
     {
-        title: "Figma",
+        title: "Organize your campaigns",
         desc: "With lots of unique blocks, you can easily build a page without coding. Build your next landing page.",
         icon: <Image
         src={organize}
@@ -52,7 +52,7 @@ export const integrations = [
       />
 
     }, {
-        title: "Github",
+        title: "Manage customers",
         desc: "With lots of unique blocks, you can easily build a page without coding. Build your next landing page.",
         icon: <Image
         src={customer}
@@ -61,7 +61,7 @@ export const integrations = [
         alt="customer"
         className="float-left"/>
     }, {
-        title: "Discord",
+        title: "Track progress fast",
         desc: "With lots of unique blocks, you can easily build a page without coding. Build your next landing page.",
         icon: <Image
         src={bar}
