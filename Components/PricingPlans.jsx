@@ -18,7 +18,7 @@ const PricingPlans = () => {
             key={plan.title}
             className=" flex flex-col border border-slate-200 p-4 mt-2 rounded-2xl bg-white shadow-md p-8"
           >
-            <h3 className="text-lg leading-5">{plan.title}</h3>
+            <h3 className="text-lg leading-5 text-indigo-600 ">{plan.title}</h3>
             <div className="mt-2 p-6 ">
               <p className="text-sm font-semi-bold item-center">
                 <span>{plan.currency}</span>
@@ -80,7 +80,7 @@ const PricingPlans = () => {
                 ${
                   plan.mostPopular
                     ? "text-white bg-indigo-600 rounded-full hover:bg-indigo-500 active:bg-indigo-700 shadow-md"
-                    : "text-violet-600  bg-violet-50 hover:bg-violet-100 "
+                    : "text-indigo-600  bg-violet-50 hover:bg-violet-100 "
                 }
                 `}>
                   {" "}
@@ -103,6 +103,9 @@ const PricingPlans = () => {
                 />}
                 </button>
               </Link>
+            </div>
+            <div className="mt-2 p-6 ">
+              <p className=" text-sm text-gray-400 leading-6">{plan.credit}</p>
             </div>
           </div>
         ))}
