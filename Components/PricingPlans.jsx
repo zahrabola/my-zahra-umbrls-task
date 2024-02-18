@@ -76,11 +76,11 @@ const PricingPlans = () => {
             {/* button*/}
             <div>
               <Link href="#">
-                <button  className={`mt-8 block px-6 py-4 text-white duration-150 bg-indigo-600 rounded-full hover:bg-indigo-500 active:bg-indigo-700 shadow-md
+                <button  className={`mt-8 block px-6 py-4 text-indigo-600  duration-150 bg-indigo-600 rounded-full hover:bg-indigo-500 active:bg-indigo-700 shadow-md
                 ${
                   plan.mostPopular
                     ? "text-white bg-indigo-600 rounded-full hover:bg-indigo-500 active:bg-indigo-700 shadow-md"
-                    : "text-indigo-600  bg-violet-50 hover:bg-violet-100 "
+                    : "  bg-violet-50 hover:bg-violet-100 text-indigo-600 "
                 }
                 `}>
                   {" "}

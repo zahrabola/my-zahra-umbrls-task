@@ -1,6 +1,7 @@
 import CheckFeatures from "@/Components/CheckFeatures";
 import Hero from "@/Components/Hero";
 import HeroTwo from "@/Components/HeroTwo";
+import Navbar from "@/Components/Navbar";
 import PricingPlans from "@/Components/PricingPlans";
 
 
@@ -8,7 +9,7 @@ export default function Home() {
   return (
     <>
       <div>
-        {/*Navbar */}
+        <Navbar />
         <Hero />
         {/*Toggle */}
         <PricingPlans />
