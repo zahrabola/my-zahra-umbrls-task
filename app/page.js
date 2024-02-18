@@ -1,3 +1,5 @@
+import Hero from "@/Components/Hero";
+import HeroTwo from "@/Components/HeroTwo";
 import Image from "next/image";
 
 export default function Home() {
@@ -5,10 +7,10 @@ export default function Home() {
     <>
       <div>
         {/*Navbar */}
-        {/*Hero */}
+        <Hero />
         {/*Toggle */}
         {/*Pricing */}
-        {/*HeroTwo */}
+        <HeroTwo />
         {/*Check */}
         {/*Footer */}
       </div>
