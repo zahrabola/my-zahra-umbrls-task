@@ -1,3 +1,4 @@
+import CheckFeatures from "@/Components/CheckFeatures";
 import Hero from "@/Components/Hero";
 import HeroTwo from "@/Components/HeroTwo";
 import PricingPlans from "@/Components/PricingPlans";
@@ -12,7 +13,7 @@ export default function Home() {
         {/*Toggle */}
         <PricingPlans />
         <HeroTwo />
-        {/*Check */}
+      <CheckFeatures />
         {/*Footer */}
       </div>
     </>
