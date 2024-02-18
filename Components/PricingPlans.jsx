@@ -4,6 +4,8 @@ import { dataPricingPlans } from "../DataPrice/index";
 import Image from "next/image";
 import tick from "../public/tick.png";
 import cross from "../public/cross.png";
+import Link from "next/link";
+import arrow2 from "../public/arrow2.png"
 
 const PricingPlans = () => {
   return (
@@ -15,44 +17,34 @@ const PricingPlans = () => {
             className=" flex flex-col border border-slate-200 p-4 mt-2 rounded-2xl bg-white shadow-md p-8"
           >
             <h3 className="text-lg leading-5">{plan.title}</h3>
-            <div>
-              <p>
+            <div className="mt-2 p-6 ">
+              <p className="text-sm font-semi-bold item-center">
                 <span>{plan.currency}</span>
-                <span>{plan.price}</span>
-                <span>{plan.frequency}</span>
+                <span className="text-4xl font-bold ml-3 ">{plan.price}</span>
+                <span className=" ml-1">{plan.frequency}</span>
               </p>
-              <p>{plan.description}</p>
+              <p className=" text-sm text-gray-400 leading-6">
+                {plan.description}
+              </p>
             </div>
             {/* features */}
 
             <div>
-                <ul>
-                    {plan.features.map((feature) => (
-                        <li key={feature}>
-                            <Image
-                             src={tick}
-                             width={10}
-                             height={10}
-                             alt="tick"
-                             className="float-left"/>
-                             <span>{feature}</span>
-                        </li>
-                    ))}
-                      {/* nonsupport*/}
-                      {plan.nonSupport && (
-                         <li >
-                         <Image
-                           src={cross}
-                           width={10}
-                           height={10}
-                           alt="cross"
-                           className="float-left"
-                         />
-                         <span >6 Month Premium Support</span>
-                       </li>
-                      )}
-                      {/* nonupdate*/}
-                      {plan.nonUpdates && (
+              <ul className="mt-6 space-y-4 flex-1">
+                {plan.features.map((feature) => (
+                  <li className="text-sm" key={feature}>
+                    <Image
+                      src={tick}
+                      width={10}
+                      height={10}
+                      alt="tick"
+                      className="float-left"
+                    />
+                    <span className="ml-3">{feature}</span>
+                  </li>
+                ))}
+                {/* nonsupport*/}
+                {plan.nonSupport && (
                   <li className="text-sm">
                     <Image
                       src={cross}
@@ -61,12 +53,40 @@ const PricingPlans = () => {
                       alt="cross"
                       className="float-left"
                     />
-                    <span>Lifetime Updates</span>
+                    <span className="ml-3">6 Month Premium Support</span>
                   </li>
                 )}
-                </ul>
+                {/* nonupdate*/}
+                {plan.nonUpdates && (
+                  <li className="text-sm">
+                    <Image
+                      src={cross}
+                      width={10}
+                      height={10}
+                      alt="cross"
+                      className="float-left"
+                    />
+                    <span className="ml-3">Lifetime Updates</span>
+                  </li>
+                )}
+              </ul>
             </div>
-
+            {/* button*/}
+            <div>
+              <Link href="#">
+                <button>
+                  {" "}
+                  <span className="mr-3">{plan.cta}</span>{" "}
+                  <Image
+                    src={arrow2}
+                    width={12}
+                    height={12}
+                    alt="cross"
+                    className="float-right  mt-2"
+                  />
+                </button>
+              </Link>
+            </div>
           </div>
         ))}
       </div>
