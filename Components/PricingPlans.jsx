@@ -5,7 +5,9 @@ import Image from "next/image";
 import tick from "../public/tick.png";
 import cross from "../public/cross.png";
 import Link from "next/link";
+import arrow from "../public/arrow.png"
 import arrow2 from "../public/arrow2.png"
+
 
 const PricingPlans = () => {
   return (
@@ -74,16 +76,31 @@ const PricingPlans = () => {
             {/* button*/}
             <div>
               <Link href="#">
-                <button>
+                <button  className={`mt-8 block px-6 py-4 text-white duration-150 bg-indigo-600 rounded-full hover:bg-indigo-500 active:bg-indigo-700 shadow-md
+                ${
+                  plan.mostPopular
+                    ? "text-white bg-indigo-600 rounded-full hover:bg-indigo-500 active:bg-indigo-700 shadow-md"
+                    : "text-violet-600  bg-violet-50 hover:bg-violet-100 "
+                }
+                `}>
                   {" "}
                   <span className="mr-3">{plan.cta}</span>{" "}
+                  {
+                  plan.mostPopular ?
                   <Image
-                    src={arrow2}
+                    src={arrow}
                     width={12}
                     height={12}
                     alt="cross"
-                    className="float-right  mt-2"
-                  />
+                    className="float-right mt-2"
+                  /> : 
+                  <Image
+                  src={arrow2}
+                  width={12}
+                  height={12}
+                  alt="cross"
+                  className="float-right mt-2"
+                />}
                 </button>
               </Link>
             </div>
