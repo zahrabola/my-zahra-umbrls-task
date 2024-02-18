@@ -3,6 +3,7 @@ import Hero from "@/Components/Hero";
 import HeroTwo from "@/Components/HeroTwo";
 import Navbar from "@/Components/Navbar";
 import PricingPlans from "@/Components/PricingPlans";
+import Toggle from "@/Components/Toggle";
 
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
       <div>
         <Navbar />
         <Hero />
-        {/*Toggle */}
+       <Toggle />
         <PricingPlans />
         <HeroTwo />
       <CheckFeatures />
