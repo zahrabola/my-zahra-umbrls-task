@@ -18,7 +18,7 @@ const PricingPlans = () => {
             key={plan.title}
             className=" flex flex-col border border-slate-200 p-4 mt-2 rounded-2xl bg-white shadow-md p-8"
           >
-            <h3 className="text-lg leading-5 text-indigo-600 ">{plan.title}</h3>
+            <h3 className="text-lg leading-5 text-indigo-600 font-semibold ">{plan.title}</h3>
             <div className="mt-2 p-6 ">
               <p className="text-sm font-semi-bold item-center">
                 <span>{plan.currency}</span>
